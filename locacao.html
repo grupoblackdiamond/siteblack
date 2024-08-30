@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locação de Impressoras - BLACK DIAMOND</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0;
+            color: #003366;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header a {
+            color: #003366;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding img {
+            height: 50px;
+        }
+        header nav {
+            float: right;
+            margin-top: 15px;
+        }
+        #showcase {
+            min-height: 300px;
+            background: #003366;
+            text-align: center;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+        #showcase p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #about-us {
+            padding: 30px 0;
+            background: #333;
+            color: #ffffff;
+        }
+        #services {
+            padding: 30px 0;
+            background: #f4f4f4;
+        }
+        .service {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .service h3 {
+            color: #003366;
+            margin-top: 0;
+        }
+     .service h3 {
+     font-size: 2em;
+     text-align: center;
+     margin-bottom: 20px;
+      color: #003366;
+}
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+        }
+        .product-list p {
+    text-align: center;
+    padding: 0 10px;
+    margin-top: auto;
+}
+
+        .product-list li h4 {
+            
+                font-size: 1.2em;
+                text-align: center;
+                margin-bottom: 10px;
+                }
+
+ 
+                .product-list li {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.product-list img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.product-list h4 {
+    color: #003366;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+        .highlight {
+    background-color: #003366; /* Azul escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+    
+.highlight h3 {
+    color: #ffffff; /* Título branco */
+}
+
+.highlight p {
+    color: #ffffff; /* Texto branco */
+}
+
+.highlight a {
+    color: #ffffff; /* Links brancos */
+    text-decoration: underline;
+}
+
+.highlight.left-aligned {
+    text-align: left;
+}
+
+.highlight.left-aligned .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+        .cta-button {
+            display: inline-block;
+            background: #808080;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #666666;
+        }
+        footer {
+            padding: 20px 0;
+            color: #ffffff;
+            background-color: #003366;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .product-list li {
+                flex-basis: 100%;
+            }
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header nav {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="../blackdiamond.html">
+                    <img src="https://cdn.awsli.com.br/2218/2218358/logo/96f894d9ac.png" alt="Logo Black Diamond">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../blackdiamond.html">Home</a></li>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../manutencao/manutencao.html">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>LOCAÇÃO DE IMPRESSORAS BLACK DIAMOND</h1>
+            <p>Com a gente você aluga, compra e também recebe suporte!</p>
+            <a href="https://wa.me/551141859250" class="cta-button">Solicite um orçamento</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Produtos e serviços</h2>
+            <div class="service">
+                <h3>Impressoras de etiquetas</h3>
+                <ul class="product-list">
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da ZD 220" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>ZEBRA ZD 220</h4>
+                            <img src="https://rework.com.br/wp-content/uploads/2024/07/Zebra-ZD230t-3.png" alt="Impressora ZD 230">
+                            <p>Impressora térmica etiquetadora, ideal para aplicações de etiquetagem rápida e eficiente.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da ZT 230" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>ZEBRA ZT 230</h4>
+                            <img src="https://images.tcdn.com.br/files/108620/themes/1027/img/produtos/impressora-termica-de-etiquetas-zebra-zt230-com-logo-zebra.png" alt="Impressora ZT 230">
+                            <p>Impressora térmica etiquetadora, solução robusta para impressão de etiquetas com alta qualidade e durabilidade.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>Impressoras a laser</h3>
+                <ul class="product-list">
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Samsung 4020DN" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Samsung 4020DN</h4>
+                            <img src="https://www.starcopias.com.br/wp-content/uploads/2018/07/Impressora-Mono-Samsung-4020.png" alt="Impressora Samsung 4020">
+                            <p>Impressora laser confiável para alta produtividade e excelente qualidade de impressão em preto e branco.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Samsung ML3750ND" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Samsung ML3750ND</h4>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05741429.png" alt="Impressora Samsung 3750">
+                            <p>Impressora laser com alta qualidade e performance confiável.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>Impressoras multifuncionais preto e branco</h3>
+                <ul class="product-list">
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Samsung N4070" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Samsung N4070</h4>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05713861.png" alt="Impressora Samsung 4070">
+                            <p>Equipamento multifuncional projetado para oferecer desempenho superior em impressão, cópia e digitalização.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Samsung N4080" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Samsung N4080</h4>
+                            <img src="https://painel.gestpar.com.br/wp-content/uploads/2020/03/SamsungProXpressM4070FR-1.png" alt="Impressora Samsung 4080">
+                            <p>Solução avançada que combina impressão, cópia e digitalização com alta eficiência e qualidade.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>Impressoras multifuncionais coloridas</h3>
+                <ul class="product-list">
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Samsung CLX 6260" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Samsung CLX 6260</h4>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05678193.png" alt="Impressora Samsung 6260">
+                            <p>Ideal para ambientes que exigem impressões de alta qualidade e versatilidade.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Samsung CLX 8640ND" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Samsung CLX 8640ND</h4>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05823746.png" alt="Impressora Samsung 8640">
+                            <p>Impressora multifuncional colorida de alta performance.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Samsung X4220 A3" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Samsung X4220 A3</h4>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05594452.png" alt="Impressora Samsung 4220">
+                            <p>Modelo multifuncional colorido com excelente qualidade de impressão, perfeita para impressões A3.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3>Impressoras de tinta</h3>
+                <ul class="product-list">
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Epson L656" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Epson L656</h4>
+                            <img src="https://mediaserver.goepson.com/ImConvServlet/imconv/2f9102e799cf53e7d63212cadff9d03acca6a725/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=L655_1" alt="Impressora Epson L656">
+                            <p>Impressora tanque com alta capacidade e eficiência.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Epson L3150" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                            <h4>Epson L3150</h4>
+                            <img src="https://mediaserver.goepson.com/ImConvServlet/imconv/a3b65d312688bc7536835f529eb5db5f1204446c/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=L3150_lSPT_C11CG86301_384x286_prod_image" alt="Impressora Epson L3150">
+                            <p>Modelo com tanque ideal para grandes volumes de impressão.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+            <footer>
+                <div class="container">
+                    <p>&copy; 2024 BLACK DIAMOND TONERS. Todos os direitos reservados.</p>
+                    <div class="contact-info">
+                        <p><strong>Telefone:</strong> (11) 4185-9250</p>
+                        <p><strong>Endereço:</strong> R. Kalil Filho, 181 - Carapicuíba - SP</p>
+                    </div>
+                </div>
+            </footer>
+
+    <script src="../redirecionamento.js"></script>
+</body>
+</html>
+
+

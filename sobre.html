@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - BLACK DIAMOND</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0;
+            color: #003366;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header a {
+            color: #003366;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding img {
+            height: 50px;
+        }
+        header nav {
+            float: right;
+            margin-top: 15px;
+        }
+        #showcase {
+            min-height: 300px;
+            background: #003366;
+            text-align: center;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+        #showcase p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #about-us {
+            padding: 30px 0;
+            background: #ffffff;
+        }
+        #about-us h2 {
+            color: #003366;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        #about-us p {
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            flex-basis: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-item p {
+            padding: 10px;
+            text-align: center;
+            background: #f0f0f0;
+            margin: 0;
+        }
+        footer {
+            padding: 20px 0;
+            color: #ffffff;
+            background-color: #003366;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header nav {
+                margin-top: 20px;
+            }
+            .gallery-item {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="../blackdiamond.html">
+                    <img src="https://cdn.awsli.com.br/2218/2218358/logo/96f894d9ac.png" alt="Logo Black Diamond">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../blackdiamond.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="../manutencao/manutencao.html">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Sobre a BLACK DIAMOND</h1>
+            <p>Conheça nossa história e trajetória de sucesso</p>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <h2>Nossa História</h2>
+            <p>A Black Diamond é uma empresa consolidada no mercado, com mais de 15 anos de experiência na área de tecnologia de impressão. Fundada em 2009, nossa jornada começou com uma visão clara: fornecer soluções de impressão de alta qualidade e suporte técnico excepcional para empresas de todos os tamanhos.</p>
+            <p>Ao longo dos anos, expandimos nossos serviços para incluir vendas de equipamentos, locação de impressoras e uma ampla gama de suprimentos. Nossa dedicação à excelência e ao atendimento ao cliente nos permitiu crescer e nos tornar uma referência no setor.</p>
+            <p>Hoje, a Black Diamond é reconhecida por sua expertise técnica, produtos de qualidade e compromisso inabalável com a satisfação do cliente. Continuamos a evoluir e inovar, sempre buscando as melhores soluções para atender às necessidades em constante mudança de nossos clientes.</p>
+            
+            <h2>Nossa Trajetória em Imagens</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="imagem1.jpg" alt="Fundação da empresa">
+                    <p>2009 - Fundação da Black Diamond</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagem2.jpg" alt="Expansão dos serviços">
+                    <p>2014 - Expansão para serviços de locação</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagem3.jpg" alt="Novo escritório">
+                    <p>2018 - Inauguração do novo escritório</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagem4.jpg" alt="Prêmio de excelência">
+                    <p>2020 - Prêmio de Excelência em Atendimento</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagem5.jpg" alt="Equipe atual">
+                    <p>2024 - Nossa equipe atual</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BLACK DIAMOND TONERS. Todos os direitos reservados.</p>
+            <div class="contact-info">
+                <p><strong>Telefone:</strong> (11) 4185-9250</p>
+                <p><strong>Endereço:</strong> R. Kalil Filho, 181 - Carapicuíba - SP</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

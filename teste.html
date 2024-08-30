@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressoras - BLACK DIAMOND</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0; /* Alterado para um cinza claro */
+            color: #003366; /* Alterado para azul escuro */
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header a {
+            color: #003366; /* Alterado para azul escuro */
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding img {
+            height: 50px;
+        }
+        header nav {
+            float: right;
+            margin-top: 15px;
+        }
+        header .highlight, header .current a {
+            color: #808080;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: #003366;
+            text-align: center;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+        #showcase p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #about-us {
+            padding: 30px 0;
+            background: #ffffff;
+        }
+        #printers {
+            padding: 30px 0;
+            background: #f4f4f4;
+        }
+        .printer-item {
+            float: left;
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            background: #ffffff;
+            margin: 1.66%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .printer-item img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .printer-item h3 {
+            color: #003366;
+            margin-top: 15px;
+        }
+        .highlight {
+            padding: 30px 0;
+            background: #e6e6e6;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #808080;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #666666;
+        }
+        footer {
+            padding: 20px 0;
+            color: #ffffff;
+            background-color: #003366;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="../blackdiamond.html">
+                    <img src="https://cdn.awsli.com.br/2218/2218358/logo/96f894d9ac.png" alt="Logo Black Diamond">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>IMPRESSORAS BLACK DIAMOND</h1>
+            <p>Descubra nossa linha completa de impressoras de alta qualidade.</p>
+            <a href="#" class="cta-button" data-urls="https://wa.me/551141859250,https://outra-url.com,https://mais-uma-url.com">Solicite um orçamento</a>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <h2>Sobre a Black Diamond</h2>
+            <p>A Black Diamond é uma empresa consolidada no mercado, com mais de 15 anos de
+                 experiência na área de tecnologia de impressão. Especializados em vendas, suporte e locação 
+                 de impressoras, oferecemos soluções abrangentes para atender às necessidades de nossos clientes 
+                 com eficiência e profissionalismo.</p>
+        </div>
+    </section>
+
+    <section id="printers">
+        <div class="container">
+            <h2>Nossas Impressoras</h2>
+            <div class="printer-item">
+                <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Impressora Modelo 1" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                    <h3>Impressora Modelo 1</h3>
+                    <img src="https://example.com/impressora-modelo-1.jpg" alt="Impressora Modelo 1">
+                    <p>Impressora multifuncional de alta performance para escritórios.</p>
+                </a>
+            </div>
+            <div class="printer-item">
+                <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Impressora Modelo 2" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                    <h3>Impressora Modelo 2</h3>
+                    <img src="https://example.com/impressora-modelo-2.jpg" alt="Impressora Modelo 2">
+                    <p>Impressora laser colorida ideal para grandes volumes de impressão.</p>
+                </a>
+            </div>
+            <div class="printer-item">
+                <a href="#" class="product-link" data-message="Olá, vim para conversar referente a locação da Impressora Modelo 3" data-links="https://wa.me/5511963198249,https://wa.me/5511912817086">
+                    <h3>Impressora Modelo 3</h3>
+                    <img src="https://example.com/impressora-modelo-3.jpg" alt="Impressora Modelo 3">
+                    <p>Impressora compacta perfeita para uso doméstico ou pequenos escritórios.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+            
+    <section class="highlight">
+        <div class="container">
+            <h3>Novidade em Impressoras!</h3>
+            <p>Explore nossa nova linha de impressoras que oferece maior eficiência e qualidade superior. Ideal para qualquer tipo de negócio.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BLACK DIAMOND IMPRESSORAS. Todos os direitos reservados.</p>
+            <div class="contact-info">
+                <p><strong>Telefone:</strong> (11) 4185-9250</p>
+                <p><strong>Endereço:</strong> R. Kalil Filho, 181 - Carapicuíba - SP</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../redirecionamento.js"></script>
+</body>
+</html>

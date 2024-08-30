@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK DIAMOND - Página Inicial</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #f0f0f0;
+            color: #003366;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header a {
+            color: #003366;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding img {
+            height: 50px;
+        }
+        header nav {
+            float: right;
+            margin-top: 15px;
+        }
+        #showcase {
+            min-height: 300px;
+            background: #003366;
+            text-align: center;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+        #showcase p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #about-us {
+            padding: 30px 0;
+            background: #333;
+            color: #ffffff;
+        }
+        #services {
+            padding: 30px 0;
+            background: #f4f4f4;
+        }
+        .service {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .service h3 {
+            color: #003366;
+            margin-top: 0;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+        }
+        .product-list li {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product-list li p {
+                text-align: center;
+                padding: 0 10px;
+        }
+        .product-list li h4 {
+    text-align: center;
+}
+        .product-list img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+        }   
+        .product-list h4 {
+            color: #003366;
+            margin: 10px 0;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .highlight {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .highlight h3 {
+            color: #ffffff;
+        }
+        .highlight p {
+            color: #ffffff;
+        }
+        .highlight a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #808080;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #666666;
+        }
+        footer {
+            padding: 20px 0;
+            color: #ffffff;
+            background-color: #003366;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .product-list li {
+                flex-basis: 100%;
+            }
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header nav {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="blackdiamond.html">
+                    <img src="https://cdn.awsli.com.br/2218/2218358/logo/96f894d9ac.png" alt="Logo Black Diamond">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="blackdiamond.html">Home</a></li>
+                    <li><a href="sobre/sobre.html">Sobre</a></li>
+                    <li><a href="manutencao/manutencao.html">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>BLACK DIAMOND</h1>
+            <p>Especializados em impressoras, toners e locação com suporte técnico de alta qualidade.</p>
+            <a href="#services" class="cta-button">Saiba mais</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>SERVIÇOS</h2>
+            <div class="service">
+                <h3>Nossos principais serviços prestados</h3>
+                <ul class="product-list">
+                    <li>
+                        <a href="vendas/tintas.html">
+                            <h4>LOJA DE TINTAS</h4>
+                            <img src="https://www.cristalinformatica.com.br/restrito/upload/produtos/338.png" alt="Tintas">
+                            <p>Conheça nossas opções de tintas de <b>alta qualidade!</b></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vendas/toners.html">
+                            <h4>LOJA DE TONERS</h4>
+                            <img src="https://cdn.pixabay.com/photo/2018/04/16/09/56/toner-3324114_960_720.png" alt="Toners">
+                            <p>Descubra nossa gama de toners para impressoras.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="locacao/locacao.html">
+                            <h4>LOCAÇÃO DE IMPRESSORAS</h4>
+                            <img src="https://afinko.com.br/wp-content/themes/afinkotheme/assets/images/impressora-home.png" alt="Locação">
+                            <p>Encontre o serviço de locação de impressoras que <b>você precisa!</b></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manutencao/manutencao.html">
+                            <h4>MANUTENÇÃO</h4>
+                            <img src="https://d1p6nzzdute2g.cloudfront.net/lojas/loja-1601/7086eca4-de4f-4b3e-a95e-2c7332a91373" alt="Suporte">
+                            <p>Nossa equipe de manutenção, pronta para ajudá-los!</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BLACK DIAMOND TONERS. Todos os direitos reservados.</p>
+            <div class="contact-info">
+                <p><strong>Telefone:</strong> (11) 4185-9250</p>
+                <p><strong>Endereço:</strong> R. Kalil Filho, 181 - Carapicuíba - SP</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
